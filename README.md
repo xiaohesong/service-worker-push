@@ -19,6 +19,8 @@ npm i && npm start
 
 > 如果不小心点了通知禁止，可以点击浏览器网址导航左侧的`圈i`。
 
+这个是订阅是否推送，如果想直接请求用户推送的权限，在[auto request 分支](https://github.com/xiaohesong/service-worker-push/tree/auto-request)
+
 
 上面的模拟的服务器推送，如果需要集成，可以载入对应的包。
 
