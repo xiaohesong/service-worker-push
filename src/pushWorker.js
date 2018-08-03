@@ -49,21 +49,11 @@ function initialiseUI() {
     }
   });
 
-
-  // Set the initial subscription value
-  swRegistration.pushManager.getSubscription()
-    .then(function (subscription) {
-      // check user subscribeable
-      isSubscribed = !(subscription === null);
-      updateSubscriptionOnServer(subscription);
-      if (isSubscribed) {
-        console.log('用户订阅了消息推送.');
-      } else {
-        console.log('用户没有订阅.');
-      }
-
-      updateBtn();
-    });
+  Notification.requestPermission(function (result) {
+    isSubscribed = result === 'granted'
+    subscribeUser()
+    console.log("Notificationission : ", result);
+  });
 }
 
 function updateBtn() {
