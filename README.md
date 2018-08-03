@@ -18,3 +18,9 @@ npm i && npm start
 不出意外，会显示推送的消息.
 
 > 如果不小心点了通知禁止，可以点击浏览器网址导航左侧的`圈i`。
+
+
+上面的模拟的服务器推送，如果需要集成，可以载入对应的包。
+
+- [后端push包](https://github.com/web-push-libs)
+- [ruby push](https://github.com/zaru/webpush)
